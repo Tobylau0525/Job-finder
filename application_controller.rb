@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     # puts params
     @keyword = params[:keyword]
     @location=params[:location]
-  
+    
     
     erb :result
   end  
