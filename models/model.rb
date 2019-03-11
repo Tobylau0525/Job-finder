@@ -29,36 +29,43 @@ require 'pp'
 end     
 
 
-class Job
-    attr_accessor :api,:language,:location
+# class Job
+#     attr_accessor :api,:language,:location
    
-    def initialize(cj_api_client,programming_language,location)
-        @api=cj_api_client
-        @language=programming_language
-        @location=location
+#     def initialize(cj_api_client,programming_language,location)
+#         @api=cj_api_client
+#         @language=programming_language
+#         @location=location
       
-    end  
+#     end  
    
-    def get_job_offer
+#     def get_job_offer
       
    
-        pp api.search(
-            :keywords   => language,
-            :location   => location,
-            :affid      => '1f8f344630cdb44534351ce3cd6c2d0c',
-            :user_ip    => '11.22.33.44',
-            :user_agent => 'Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0',
-            :url        => 'http://www.example.com/jobsearch?q=ruby&l=london'
-        ).jobs.first
+#         pp api.search(
+#             :keywords   => language,
+#             :location   => location,
+#             :affid      => '1f8f344630cdb44534351ce3cd6c2d0c',
+#             :user_ip    => '11.22.33.44',
+#             :user_agent => 'Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0',
+#             :url        => 'http://www.example.com/jobsearch?q=ruby&l=london'
+#         ).jobs.first
  
  
      
-    end  
+#     end  
  
-end    
+# end    
 
+<<<<<<< HEAD
 ruby=Job.new(cj_api_client,'C++','London')
 puts ruby.get_job_offer
+=======
+get_job_offer(cj_api_client,'ruby','NY')
+
+# ruby=Job.new(cj_api_client,'ruby','NY')
+# puts ruby.get_job_offer
+>>>>>>> 8770ff57ad06df40e7f021df090e973d23d27ef6
 
 # company="Talent Point Ltd" 
 # date="Sun, 03 Mar 2019 08:47:59 GMT" 
