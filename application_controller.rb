@@ -13,9 +13,9 @@ class ApplicationController < Sinatra::Base
   post '/result' do 
     
     # puts params
-    @jobfinder = params[:jobfinder]
+    @keyword = params[:keyword]
+    @location=params[:location]
     
-  
     
     erb :result
   end  
