@@ -14,6 +14,7 @@ class ApplicationController < Sinatra::Base
     
     # puts params
     @jobfinder = params[:jobfinder]
+    
   
     
     erb :result
