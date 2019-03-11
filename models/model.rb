@@ -12,11 +12,11 @@ require 'pp'
 #      :url        => 'http://www.example.com/jobsearch?q=ruby&l=london'
 #  ).jobs.first
  
-  def get_job_offer(api,language,location)
+  def get_job_offer(api,keyword,location)
       
    
       pp api.search(
-      :keywords   => language,
+      :keywords   => keyword,
       :location   => location,
       :affid      => '1f8f344630cdb44534351ce3cd6c2d0c',
       :user_ip    => '11.22.33.44',
@@ -57,7 +57,7 @@ end
  
 # end    
 
-get_job_offer(cj_api_client,'ruby','NY')
+get_job_offer(cj_api_client,@keyword,@location)
 
 # ruby=Job.new(cj_api_client,'ruby','NY')
 # puts ruby.get_job_offer
