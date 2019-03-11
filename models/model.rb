@@ -12,21 +12,21 @@ require 'pp'
 #      :url        => 'http://www.example.com/jobsearch?q=ruby&l=london'
 #  ).jobs.first
  
-#   def get_job_offer(api,language,location)
+  def get_job_offer(api,language,location)
       
    
-#       pp api.search(
-#       :keywords   => language,
-#       :location   => location,
-#       :affid      => '1f8f344630cdb44534351ce3cd6c2d0c',
-#       :user_ip    => '11.22.33.44',
-#       :user_agent => 'Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0',
-#       :url        => 'http://www.example.com/jobsearch?q=ruby&l=london'
-#   ).jobs.first
+      pp api.search(
+      :keywords   => language,
+      :location   => location,
+      :affid      => '1f8f344630cdb44534351ce3cd6c2d0c',
+      :user_ip    => '11.22.33.44',
+      :user_agent => 'Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0',
+      :url        => 'http://www.example.com/jobsearch?q=ruby&l=london'
+  ).jobs.first
  
  
      
-# end     
+end     
 
 
 class Job
@@ -57,7 +57,7 @@ class Job
  
 end    
 
-ruby=Job.new(cj_api_client,'ruby','NY')
+ruby=Job.new(cj_api_client,'C++','London')
 puts ruby.get_job_offer
 
 # company="Talent Point Ltd" 
