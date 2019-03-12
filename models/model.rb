@@ -58,7 +58,8 @@ end
 # end    
 
 
-get_job_offer(cj_api_client,@keyword,@location)
+# get_job_offer(cj_api_client,@keyword,@location)
+get_job_offer(cj_api_client,'C++','California')
 
 # ruby=Job.new(cj_api_client,'C++','London')
 # puts ruby.get_job_offer
