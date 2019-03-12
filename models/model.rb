@@ -53,18 +53,16 @@ end
  
  
      
-#     end  
+#end  
  
 # end    
 
-<<<<<<< HEAD
 # ruby=Job.new(cj_api_client,'ruby','NY')
 # puts ruby.get_job_offer
 get_job_offer(cj_api_client,'ruby','NY')
 
 # ruby=Job.new(cj_api_client,'ruby','NY')
 # puts ruby.get_job_offer
-=======
 
 get_job_offer(cj_api_client,@keyword,@location)
 
@@ -75,8 +73,6 @@ get_job_offer(cj_api_client,@keyword,@location)
 
 # ruby=Job.new(cj_api_client,'ruby','NY')
 # puts ruby.get_job_offer
-
->>>>>>> da5f0f36c0a13a1381c33f3d7721d91718ded7d2
 
 # company="Talent Point Ltd" 
 # date="Sun, 03 Mar 2019 08:47:59 GMT" 
