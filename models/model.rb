@@ -59,13 +59,13 @@ end
 
 # ruby=Job.new(cj_api_client,'ruby','NY')
 # puts ruby.get_job_offer
-get_job_offer(cj_api_client,'ruby','NY')
+# get_job_offer(cj_api_client,'ruby','NY')
 
 # ruby=Job.new(cj_api_client,'ruby','NY')
 # puts ruby.get_job_offer
 
 # get_job_offer(cj_api_client,@keyword,@location)
-get_job_offer(cj_api_client,'C++','California')
+get_job_offer(cj_api_client, 'cashier','California')
 
 # ruby=Job.new(cj_api_client,'C++','London')
 # puts ruby.get_job_offer

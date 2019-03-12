@@ -13,6 +13,21 @@
     
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+    body {
+      background-color: coral;
+          }
+          h1{
+          text-align: center
+          }
+          h3{
+          text-align: center
+          }
+          p{
+          text-align: center
+          }
+      </style>
+    </style>
     <!-- custom JS -->
     <script src="js/script.js"></script>
   </head>
@@ -21,10 +36,10 @@
       <h1>Job Finder</h1>
       <h3>Enter the type of job you want to search for</h3>
       <form method="post" action="/result">
-        Job: <input type="text" name="keyword" size="30" placeholder="keyword"><br>
-        Location: <input type="text" name="location" size="30" placeholder="NY">
+        <p>Job: <input type="text" name="keyword" size="30" placeholder="software engineer"><br></p>
+        <p>Area: <input type="text" name="location" size="30" placeholder="Brooklyn, New York"></p>
         
-        <input type="submit" value="Search">
+        <p><input type="submit" value="Search"></p>
         
       </form>
     </div>
