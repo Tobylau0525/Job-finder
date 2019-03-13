@@ -20,7 +20,14 @@
     
     <div class="container-fluid">
       <h1>Job result</h1>
-     <!--get_job_offer(cj_api_client,@keyword,@location)-->
+      <h3>Job title : <%= @job_offer["title"] %></h3> 
+      <h3>Company : <%= @job_offer["company"] %></h3> 
+      <h3>salary : <%= @job_offer["salary_min"] %> - <%= @job_offer["salary_max"] %></h3> 
+     <h3>Job offer in : <%= @job_offer["locations"] %></h3>
+     <h4>Current Local Time in <%= @job_offer["locations"] %> : <%= @job_offer["date"] %></h4> 
+      <h3>description : <%= @job_offer["description"] %></h3>
+      <p><a href=<%= @job_offer["url"] %>>Click here to see more about this job offer</a></p>
+       
       
     </div>
     

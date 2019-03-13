@@ -11,11 +11,12 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do 
-    
+    cj_api_client = Careerjet::APIClient.new(:locale=> :en_GB)
     # puts params
-    @keyword = params[:keyword]
-    @location=params[:location]
+    # @keyword = params[:keyword]
+    # @location = params[:location]
     
+   @job_offer = get_job_offer(cj_api_client,params[:keyword],params[:location])
     
     erb :result
   end  
