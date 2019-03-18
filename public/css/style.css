@@ -1,4 +1,40 @@
-/*body {*/
-/*  background-image: url("shake-hands.jpg");*/
-/*}*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+.text{
+    color:white;
+    
+    
+}
+body {
+    background-color: #000000;
+    /*#49c5ff*/
+}
 
+h1 {
+    text-align: center;
+    color:white;
+}
+
+h3 {
+    text-align: center;
+    color:white;
+}
+h4{
+    color:white;
+    
+}
+
+p {
+    text-align: center;
+    color:white;
+}
+
+input{
+    color:black;
+    
+}
