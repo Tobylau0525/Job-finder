@@ -4,7 +4,6 @@ GEM
     careerjet-api-client (3.1.2)
       hashie
       multi_json
-      rest-client
     coderay (1.1.1)
     domain_name (0.5.20170223)
       unf (>= 0.0.5, < 1.0.0)
@@ -23,7 +22,7 @@ GEM
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
-    rest-client (1.8.0)
+    
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
