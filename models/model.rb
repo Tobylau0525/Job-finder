@@ -16,7 +16,7 @@ require 'dotenv/load'
   def get_job_offer(api,keyword,location)
       
         
-      pp api.search(
+      api.search(
       :keywords   => keyword,
       :location   => location,
       :affid      => ENV['API_KEY'],
