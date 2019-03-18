@@ -5,4 +5,3 @@ gem 'sinatra'
 gem 'shotgun'
 gem 'dotenv'
 gem 'careerjet-api-client', :require => "careerjet/api_client"
-ruby "2.5.3"
