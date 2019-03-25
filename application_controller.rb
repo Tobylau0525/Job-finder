@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
     # @keyword = params[:keyword]
     # @location = params[:location]
     
-   @job_offer = get_job_offer(cj_api_client,params[:keyword],params[:location])
+   @job_offer = get_job_offer(cj_api_client,params[:keyword],params[:location]) #calling the method using userr's input
     
     erb :result
   end  
